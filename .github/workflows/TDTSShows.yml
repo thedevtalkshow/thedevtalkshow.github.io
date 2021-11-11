@@ -32,7 +32,7 @@ jobs:
           method: 'GET'
           
       - name: Show Response
-        run: echo ${{ steps.SearchRequest.outputs.response.kind }}          
+        run: echo "${{ fromJson(steps.SearchRequest.outputs.response).kind }}"
       
       # Call Video.list API to get details of video
       
