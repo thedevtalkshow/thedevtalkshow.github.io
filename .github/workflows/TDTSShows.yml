@@ -28,7 +28,7 @@ jobs:
         id: SearchRequest
         uses: fjogeleit/http-request-action@master
         with: 
-          url: 'https://www.googleapis.com/youtube/v3/search?key={{secrets.GOOGLEAPIKEY}}&part=id&channelId=UC2iybVI2TE2LQ6straknrnA&order=date'
+          url: 'https://www.googleapis.com/youtube/v3/search?key=${{ secrets.GOOGLEAPIKEY }}&part=id&channelId=UC2iybVI2TE2LQ6straknrnA&order=date'
           method: 'GET'
           
       - name: Show Response
