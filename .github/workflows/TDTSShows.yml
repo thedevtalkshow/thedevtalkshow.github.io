@@ -47,7 +47,7 @@ jobs:
           
       # populate the blog post
       - name: replace the tokens and copy the file
-        uses: BlobDevelopment/copy-and-replace-token@v1
+        uses: BlobDevelopment/copy-and-replace-tokens@v1
         with:
           source: './docs/_drafts/blogTemplate.markdown'
           target: './docs/_posts/2021-11-10-Automated-Content-Creation.markdown'
