@@ -50,11 +50,11 @@ jobs:
         uses: BlobDevelopment/copy-and-replace-tokens@v1
         with:
           source: './docs/_drafts/blogTemplate.markdown'
-          target: './docs/_posts/2021-11-10-Automated-Content-Creation.markdown'
+          target: './docs/_posts/2021-11-10-Automated-Content-Creation2.markdown'
         env:
-          title: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}"
-          description: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}"
-          id: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].id }}"
+          TITLE: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}"
+          DESCRIPTION: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}"
+          ID: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].id }}"
         
       - name: checkin updates
         run: |
