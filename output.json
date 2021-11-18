@@ -1,0 +1,132 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "anzcbi0Nr3KDc0pSGgOrMcI8IJc",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "US",
+    "pageInfo": {
+        "totalResults": 80,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "UVghY462_WKEyezxtvKxo7wFKyg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "xLPyxKDmL00"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "P0mdm2a8XN8NMJEh34BVC_hD5NM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "OVQQe-E-Qr0"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "WTw7w6_t6plyJaZQ-fMHypQ3tgY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "qzwjCjcWzjw"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "vCuakztXXvu28kHp-hltU385eLM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "QrZNkBh2RJM"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZJY1U5-iXZLkz8uwxjTE-s7kYyM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "pAvPPGkfFLE"
+            }
+        }
+    ]
+},
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "qitjVgG1nm-3k7AW-shx2bU8_2k",
+    "items": [
+      {
+        "kind": "youtube#video",
+        "etag": "MTJLp7v7RbVz-SP-RaCPbG9smwE",
+        "id": "xLPyxKDmL00",
+        "snippet": {
+          "publishedAt": "2021-11-11T03:34:15Z",
+          "channelId": "UC2iybVI2TE2LQ6straknrnA",
+          "title": "Live Coding - Automated Content Creation",
+          "description": "In an ongoing collection of ideas of how we can automate some of the routine tasks we need to do as a weekly live stream, we want to create a blog post as a follow-up to each show here on The Dev Talk Show.  the blog post contains the title, description, and link to the video on our YouTube archive.  \n\nThere are a number of different ways to do this and our current plan focuses on GitHub actions to do the heavy lifting.  Our data for the post is stored with the YouTube video so we will need to reach out to that service.  The custom GitHub Action will then pull this all together in a file and check this into the GitHub pages repo, which is where we host our blog.  \n\nThis will be a Live Coding session, so join us on Wed at 8:30 and see if we can pull this off or watch it go back into the backlog.  Either way, this will be fun to see.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/xLPyxKDmL00/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/xLPyxKDmL00/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/xLPyxKDmL00/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/xLPyxKDmL00/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/xLPyxKDmL00/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "The Dev Talk Show",
+          "tags": [
+            "YouTube",
+            "Coding",
+            "GitHub Actions",
+            "GitHub Pages"
+          ],
+          "categoryId": "28",
+          "liveBroadcastContent": "none",
+          "defaultLanguage": "en-US",
+          "localized": {
+            "title": "Live Coding - Automated Content Creation",
+            "description": "In an ongoing collection of ideas of how we can automate some of the routine tasks we need to do as a weekly live stream, we want to create a blog post as a follow-up to each show here on The Dev Talk Show.  the blog post contains the title, description, and link to the video on our YouTube archive.  \n\nThere are a number of different ways to do this and our current plan focuses on GitHub actions to do the heavy lifting.  Our data for the post is stored with the YouTube video so we will need to reach out to that service.  The custom GitHub Action will then pull this all together in a file and check this into the GitHub pages repo, which is where we host our blog.  \n\nThis will be a Live Coding session, so join us on Wed at 8:30 and see if we can pull this off or watch it go back into the backlog.  Either way, this will be fun to see."
+          },
+          "defaultAudioLanguage": "en-US"
+        },
+        "contentDetails": {
+          "duration": "PT2H25S",
+          "dimension": "2d",
+          "definition": "hd",
+          "caption": "false",
+          "licensedContent": false,
+          "contentRating": {},
+          "projection": "rectangular"
+        },
+        "statistics": {
+          "viewCount": "18",
+          "likeCount": "0",
+          "dislikeCount": "0",
+          "favoriteCount": "0",
+          "commentCount": "0"
+        }
+      }
+    ],
+    "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 1
+    }
+  }
+  
