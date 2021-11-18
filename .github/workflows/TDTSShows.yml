@@ -5,8 +5,6 @@ name: Build Blog Post
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -49,8 +47,8 @@ jobs:
       - name: replace the tokens and copy the file
         uses: BlobDevelopment/copy-and-replace-tokens@v1
         with:
-          source: './docs/_drafts/blogTemplate.markdown'
-          target: './docs/_posts/2021-11-10-Automated-Content-Creation4.markdown'
+          source: './docs/_drafts/blogTemplate.md'
+          target: './docs/_posts/2021-11-10-Automated-Content-Creation5.markdown'
         env:
           TITLE: '${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}'
           DESCRIPTION: '${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}'
