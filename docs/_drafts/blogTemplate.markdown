@@ -1,10 +1,10 @@
 ---
 layout: post
-title: {title}
+title: {TITLE}
 author: Rich Ross
-description: {description}
+description: {DESCRIPTION}
 
-youtubeurl: {id}
+youtubeurl: {ID}
 ---
 
 #{{ page.title }}
