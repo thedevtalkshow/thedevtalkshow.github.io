@@ -46,6 +46,24 @@ jobs:
         run: echo "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}"
           
       # populate the blog post
-      
+      - name: replace the tokens and copy the file
+        uses: BlobDevelopment/copy-and-replace-token@v1
+        with:
+          source: './docs/_drafts/blogTemplate.markdown'
+          target: './docs/_posts/2021-11-10-Automated-Content-Creation.markdown'
+        env:
+          title: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}"
+          description: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}"
+          id: "${{ fromJson(steps.VideoRequest.outputs.response).items[0].id }}"
+        
+      - name: checkin updates
+      - uses: actions/checkout@v2
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated new blog post"
+          git push
+     
       # push to gh-pages repo
       
