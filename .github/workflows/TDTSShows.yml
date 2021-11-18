@@ -52,12 +52,12 @@ jobs:
           source: './docs/_drafts/blogTemplate.markdown'
           target: './docs/_posts/2021-11-10-Automated-Content-Creation3.markdown'
         env:
-          TITLE: '${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}'
-          DESCRIPTION: '${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}'
-          ID: '${{ fromJson(steps.VideoRequest.outputs.response).items[0].id }}'
+          TITLE: ${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.title }}
+          DESCRIPTION: ${{ fromJson(steps.VideoRequest.outputs.response).items[0].snippet.description }}
+          ID: ${{ fromJson(steps.VideoRequest.outputs.response).items[0].id }}
           
       - name: check environment vars
-        run: echo $TITLE
+        run: echo env.$TITLE
         
       - name: checkin updates
         run: |
