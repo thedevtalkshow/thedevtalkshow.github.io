@@ -1,5 +1,6 @@
 ---
 layout: post
+category: video
 title: Exploring .NET 6 LIVE - Post .NET Conf Wrap Up
 author: Rich Ross
 description: ".NET 6 was released at .NET Conf 2021 and we're going to talk about new features, try it out live, and maybe explore some new features in IDEs that go with it.  There's been a lot going on in this space and after .NET Conf we'll have plenty of thoughts about it.<br><br>
